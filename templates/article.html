@@ -1,0 +1,12 @@
+{% extends 'layouts.html' %}
+
+{% block body %}
+    <h1>{{article.title}}</h1>
+    <!-- app.logger.info({{article.title}}) -->
+    <small>Written by {{article.author}}</small>
+    <hr>
+    <div>
+        {{article.body | safe }}
+    </div>
+
+{% endblock %}
